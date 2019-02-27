@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <style>
+  #grad1 {
+    height: 500px;
+    background-color: #cccccc;
+    background-image: linear-gradient(red, yellow);
+}
+body {
+    font-family: "Lato", sans-serif;
+   
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFCCE6;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body bgcolor="#ffccf2">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="tips.html">Tips and Tricks</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <center><body>
+    <h1>Info</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SilverSpoon_-_About_Me.svg/2000px-SilverSpoon_-_About_Me.svg.png" alt="Icon of About Me" height='250'>
+    <pre style="color:black;font-size:22px;">I am a student for a computer science class.
+    
+This website is apart of my grade in the class.<br><br>I enjoy anime and video games.
+
+I have a dog.</p>
+  </body></center>
+</html>
